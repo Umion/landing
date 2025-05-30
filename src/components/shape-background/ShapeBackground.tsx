@@ -26,7 +26,7 @@ function ElegantShape({
         rotate: rotate - 15,
       }}
       animate={{
-        opacity: 1,
+        opacity: 0.5,
         y: 0,
         rotate: rotate,
       }}
@@ -69,26 +69,7 @@ function ElegantShape({
   );
 }
 
-function HeroGeometric({
-  badge = "",
-  title1 = "",
-}: {
-  badge?: string;
-  title1?: string;
-}) {
-  const fadeUpVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: (i: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 1,
-        delay: 0.5 + i * 0.2,
-        ease: [0.25, 0.4, 0.25, 1],
-      },
-    }),
-  };
-
+function HeroGeometric() {
   return (
     <div className="absolute py-12 w-full h-full flex items-center justify-center  font-[family-name:var(--font-montserrat)]">
       <div className="absolute inset-0 " />
