@@ -36,7 +36,7 @@ export default function Home() {
             </div>
 
             <div>
-              <p className="text-base sm:text-lg md:text-xl text-white mb-5 leading-relaxed font-light tracking-wide max-w-xl mx-auto px-4">
+              <p className="text-base sm:text-lg md:text-xl text-white/40 mb-5 leading-relaxed font-light tracking-wide max-w-[612px] mx-auto px-4">
                 Crafting exceptional digital experiences through innovative
                 design and cutting-edge technology.
               </p>
