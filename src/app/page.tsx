@@ -7,10 +7,10 @@ export default function Home() {
     <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
       <MiniNavbar />
       <div className="min-h-screen bg-[url('/main.jpg')] flex justify-center items-center bg-cover bg-center">
-        <div className="w-[70%]">
+        <div className="w-[65%]">
           <HeroGeometric
             badge="Real Estate Company"
-            title2="Your dream home in Miami starts here"
+            title1="Your dream home in Miami starts here"
           />
         </div>
       </div>

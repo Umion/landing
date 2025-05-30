@@ -72,13 +72,11 @@ function ElegantShape({
 }
 
 function HeroGeometric({
-  badge = "Design Collective",
-  title1 = "Elevate Your Digital Vision",
-  title2 = "Crafting Exceptional Websites",
+  badge = "",
+  title1 = "",
 }: {
   badge?: string;
   title1?: string;
-  title2?: string;
 }) {
   const fadeUpVariants = {
     hidden: { opacity: 0, y: 30 },
@@ -94,7 +92,7 @@ function HeroGeometric({
   };
 
   return (
-    <div className="relative py-6 w-full flex items-center justify-center overflow-hidden bg-[#030303]">
+    <div className="relative py-16 w-full flex items-center justify-center overflow-hidden bg-[#030303]">
       <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/[0.05] via-transparent to-rose-500/[0.05] blur-3xl" />
 
       <div className="absolute inset-0 overflow-hidden">
@@ -163,17 +161,13 @@ function HeroGeometric({
             initial="hidden"
             animate="visible"
           >
-            <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 md:mb-8 tracking-tight">
-              {/* <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80">
-                {title1}
-              </span>
-              <br /> */}
+            <h1 className="text-3xl sm:text-6xl md:text-7xl font-bold mb-6 md:mb-8 tracking-tight">
               <span
                 className={cn(
                   "bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-white/90 to-rose-300 "
                 )}
               >
-                {title2}
+                {title1}
               </span>
             </h1>
           </motion.div>
@@ -188,6 +182,16 @@ function HeroGeometric({
               Luxury properties. Smart investments. Local expertise you can
               trust.
             </p>
+          </motion.div>
+          <motion.div
+            custom={2}
+            variants={fadeUpVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            <button className="px-4 py-2 cursor-pointer sm:px-3 text-xs sm:text-sm border border-[#333] bg-[rgba(31,31,31,0.62)] text-gray-300 rounded-full hover:border-white/50 hover:text-white transition-colors duration-200 w-full sm:w-auto">
+              Get a free consultation
+            </button>
           </motion.div>
         </div>
       </div>
