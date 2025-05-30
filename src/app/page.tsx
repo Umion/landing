@@ -2,6 +2,7 @@ import MiniNavbar from "@/components/mini-navbar/MiniNavbar";
 import { HeroGeometric } from "@/components/shape-background/ShapeBackground";
 import Image from "next/image";
 import { Circle } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export default function Home() {
   return (
@@ -17,32 +18,32 @@ export default function Home() {
       <div className="min-h-screen bg-[url('/main.jpg')] flex justify-center items-center bg-cover bg-center">
         <HeroGeometric />
 
-        <div className="relative pt-20 max-w-[55%] bg-black/35 backdrop-filter backdrop-blur-[5px] z-10 container mx-auto  px-4 md:px-6">
+        <div className="relative pt-20 max-w-[55%] container mx-auto  px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 md:mb-12">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full  border border-white/[0.08] mb-8 md:mb-12">
               <Circle className="h-2 w-2 fill-rose-500/80" />
               <span className="text-sm text-white/60 tracking-wide">
-                Real Estate Company
+                Kokonut UI
               </span>
             </div>
 
             <div>
-              <h1 className="text-3xl sm:text-6xl md:text-7xl font-bold mb-6 md:mb-8 tracking-tight">
-                <span className="text-white">
-                  Your dream home in Miami starts here
+              <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-6 md:mb-8 tracking-tight">
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-white/90 to-rose-300 ">
+                  Elevate Your Digital Vision
                 </span>
               </h1>
             </div>
 
             <div>
               <p className="text-base sm:text-lg md:text-xl text-white mb-5 leading-relaxed font-light tracking-wide max-w-xl mx-auto px-4">
-                Luxury properties. Smart investments. Local expertise you can
-                trust.
+                Crafting exceptional digital experiences through innovative
+                design and cutting-edge technology.
               </p>
             </div>
-            <button className="relative bottom-[-20px] text-xl font-semibold  md:px-12 md:py-3 cursor-pointer sm:px-3  sm:text-sm border border-[#333] bg-gradient-to-b from-[#F0BB2B] to-[#C67E15] text-white rounded-full hover:border-white/50 hover:text-white transition-colors duration-200 w-full sm:w-auto ">
+            {/* <button className="relative bottom-[-20px] text-xl font-semibold  md:px-12 md:py-3 cursor-pointer sm:px-3  sm:text-sm border border-[#333] bg-gradient-to-b from-[#F0BB2B] to-[#C67E15] text-white rounded-full hover:border-white/50 hover:text-white transition-colors duration-200 w-full sm:w-auto ">
               Get a free consultation
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
